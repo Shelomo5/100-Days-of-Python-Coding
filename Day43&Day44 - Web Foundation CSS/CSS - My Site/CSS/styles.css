@@ -1,0 +1,166 @@
+
+
+body {
+  /* all four margins set to 0 */
+  margin: 0;
+  /* centers everything that doesn't have a width set */
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+p {
+  line-height: 2;
+}
+
+h1 {
+    /*16px= 100%= 1em */
+    /* % and em are both dynamically sized (px are not),
+    dimensions change with font size & if parent font size changes */
+    /* rem ignores parent font size, least error prone */
+    font-size: 5.625rem;
+    /* margins for top, right, bottom and left respectively */
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    color: #5F6CAF;
+
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2.5rem;
+    color: #5F6CAF;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+/* colors: E6B325 FFC93C E0BB20 FFCD38 FFCB3C */
+h3 {
+    font-family: 'Oxygen', sans-serif;
+    color: #D4AC2B;
+}
+
+hr {
+  border: dotted lightblue 6px;
+  border-top: none;
+  /* % allows scaling when website scales */
+  width:6%;
+  margin: 100px auto;
+}
+
+a {
+  color: #5F6CAF;
+  font-family: 'Oxygen', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+/* pseudoclass */
+a:hover {
+  color: #00005C;
+}
+
+.list {
+     line-height: 2rem;
+     height: auto;
+   }
+
+.contact-section{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 275px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  /* position relative to its parent top container */
+  position: absolute;
+  right: 320px;
+  top: 80px;
+}
+
+.top-container {
+  background-color: lightyellow;
+  /* background-color: #FFF9B0; */
+  margin-top: 0;
+  position: relative;
+  padding-top: 110px;
+}
+
+.middle-container {
+/* background-color: lightyellow; */
+/* 100px for top and bottom */
+margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #FFF9B0;
+  /* background-color: #D4AC2B; */
+padding: 50px 0 20px;
+}
+.pro{
+  text-decoration: underline;
+}
+
+.introduction{
+  width: 30%;
+  margin: auto;
+}
+
+.copyright {
+  color:#5F6CAF;
+  font-size: .75rem;
+  padding:20px 0;
+}
+
+/* text-align overrides body align */
+.skill-row {
+  width: 50%;
+  /* circle shorthand centers text */
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+.code-img {
+width: 25%;
+/* allows text to go to right of image */
+float: left;
+margin-right: 20px;
+}
+
+.chilli-img {
+/* scaled down 1/4 width of parent */
+/* text wraps around the image */
+width: 25%;
+float: right;
+margin-left: 20px;
+}
+
+/* Button generation */
+.btn {
+  background: #D4AC2B;
+  background-image: -webkit-linear-gradient(top, #D4AC2B, #FFCE45);
+  background-image: -moz-linear-gradient(top, #D4AC2B, #FFCE45);
+  background-image: -ms-linear-gradient(top, #D4AC2B, #FFCE45);
+  background-image: -o-linear-gradient(top, #D4AC2B, #FFCE45);
+  background-image: linear-gradient(to bottom, #D4AC2B, #FFCE45);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Oxygen', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffd700;
+  background-image: -webkit-linear-gradient(top, #ffd700, #daa520);
+  background-image: -moz-linear-gradient(top, #ffd700, #daa520);
+  background-image: -ms-linear-gradient(top, #ffd700, #daa520);
+  background-image: -o-linear-gradient(top, #ffd700, #daa520);
+  background-image: linear-gradient(to bottom, #ffd700, #daa520);
+  text-decoration: none;
+}

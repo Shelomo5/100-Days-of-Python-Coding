@@ -1,0 +1,19 @@
+body {
+  background-color: lightyellow;
+}
+/* specifying top border style while eliminating other borders w/ none value */
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightblue;
+  border-width: 6px;
+  width: 10%;
+}
+
+h1 {
+  color: goldenrod
+}
+
+h3 {
+  color: goldenrod
+}
