@@ -6,7 +6,7 @@ import time
 import os
 
 Instagram_URL = "https://www.instagram.com/accounts/login/"
-# Url to profile
+# Url to profile, using mbappe as an example
 Instagram_Profile = "k.mbappe/"
 
 
