@@ -104,6 +104,8 @@ class InstaFollower:
 instagram = InstaFollower(chrome_driver_path)
 # Login to instagram
 instagram.login()
+# Method shows followers
 instagram.find_followers()
+# Clicks on followers
 instagram.follow()
 
