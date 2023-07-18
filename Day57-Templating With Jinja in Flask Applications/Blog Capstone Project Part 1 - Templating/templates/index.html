@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+    </div>
+<!-- iterating though each object (each entry) appended to entries_list in main.py-->
+    {% for post in posts: %}
+    <div class="content">
+        <div class="card">
+            <h2> {{ post.title }} </h2>
+            <p> {{ post.subtitle }} </p>
+            <!-- hyperlink created to route user to display_post method
+            each hyperlink is associated to a keyword argument post.id value for each blog entry -->
+            <a href="{{url_for('display_post', post_num=post.id) }}">Read</a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in London.</p>
+</footer>
+</html>
