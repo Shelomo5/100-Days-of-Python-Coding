@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+<!--Form created using render_form() function from bootstrap-flask -->
+<!--It takes the WTForm object that was passed to the template-->
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+	<div class="container">
+	<h1>Login</h1>
+		{{render_form(form)}}
+	</div>
+{% endblock %}
+
+
